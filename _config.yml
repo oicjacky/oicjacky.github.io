@@ -8,7 +8,7 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : simple site
+title : source site
 author :
   name : San
   email : jack5010485@gmail.com
@@ -26,7 +26,7 @@ markdown: kramdown
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
-  version : 0.3.0
+  version : 4.2.0
 
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
