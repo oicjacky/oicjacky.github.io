@@ -8,7 +8,7 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : source site
+title : personal website
 author :
   name : San
   email : jack5010485@gmail.com
@@ -17,11 +17,13 @@ author :
   feedburner : oicjacky
 
 # NOTE: Replacing this next line with your own URL
-production_url : https://oicjacky.github.io/personal-site/
+production_url : https://oicjacky.github.io/
 
 # Tell Github to use the kramdown markdown interpreter
 # (see https://help.github.com/articles/migrating-your-pages-site-from-maruku)
 markdown: kramdown
 
-
-theme: jekyll-theme-merlot
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
