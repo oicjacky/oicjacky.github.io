@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///C:/Users/user/AppData/Local/Temp/mume202129-4292-q5uce3.0skt.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Note_Research</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="./Note_Research_0309_files/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h3 class="mume-header" id="real-time-occupancy-estimation-using-wifi-network-to-optimize-hvac-operationhttpswwwsciencedirectcomsciencearticlepiis1877050919309834"><a href="https://www.sciencedirect.com/science/article/pii/S1877050919309834">Real-time Occupancy Estimation Using WiFi Network to Optimize HVAC Operation</a></h3>
+
+<p>有關於大建築物的冷暖空調設備能源節省系統，透過實時偵測建築物內人數來調節運轉動力比例</p>
+<h3 class="mume-header" id="robust-occupancy-inference-with-commodity-wifihttpwwwcsoxacukfiles9033pid4408327pdf"><a href="http://www.cs.ox.ac.uk/files/9033/PID4408327.pdf">Robust Occupancy Inference with Commodity WiFi</a></h3>
+
+<p>提出一個Wireless Occupancy Inference (WiPing) system可以判斷準確穩定的室內占用人數</p>
+<h3 class="mume-header" id="wi-fi-sensing-application-and-challengeshttpsarxivorgftparxivpapers1901190100715pdf"><a href="https://arxiv.org/ftp/arxiv/papers/1901/1901.00715.pdf">Wi-Fi Sensing: Application and Challenges</a></h3>
+
+<p>基於Wifi的多種應用感測系統<br>
+Wi-Fi People localization; elderly people monitoring; activity classification; gesture<br>
+recognition; people counting; through the wall sensing; behind the corner sensing</p>
+<h3 class="mume-header" id="highly-accurate-occupancy-estimation-using-rf-signals-and-wi-fihttpstechtransferuniversityofcaliforniaeduncd25050html"><a href="https://techtransfer.universityofcalifornia.edu/NCD/25050.html">Highly Accurate Occupancy Estimation Using RF Signals and Wi-Fi</a></h3>
+
+<p>利用兩個wifi拉出一條接收與發射訊號的通道，當有人經過感應直接干擾或多重路徑干擾，<br>
+來判斷當前有多少人</p>
+<h3 class="mume-header" id="building-occupancy-detectionmodel-and-application-with-wifi-and-ble-technologieshttpsscholarscityueduhkenthesesbuilding-occupancy-detectionmodel-and-application-with-wifi-and-ble-technologiesb3575408-8150-4c37-a376-aabfe5a5b3a0html"><a href="https://scholars.cityu.edu.hk/en/theses/building-occupancy-detectionmodel-and-application-with-wifi-and-ble-technologies(b3575408-8150-4c37-a376-aabfe5a5b3a0).html">Building Occupancy Detection，Model and Application with WiFi and BLE Technologies</a></h3>
+
+<p>利用檢測到的WiFi請求的時間序列和隨機特徵，建立了一種可靠的自動佔用檢測預測機制<br>
+基於馬爾可夫鏈理論的乘員模型，並提出了一種基於馬爾可夫反饋遞歸神經網絡M-FRNN的乘員預測方法<br>
+<a href="https://escholarship.org/content/qt71j7c25h/qt71j7c25h.pdf">Occupancy prediction through Markov based feedback recurrent neural network (MFRNN) algorithm with WiFi probe technology</a><br>
+這篇提到用Markov based feedback recurrent neural network (MFRNN)模型來推測實際人數</p>
+<ul>
+<li>p.30 每個人可能有多個設備，Wang et al., 2017c提出signal patterns of connection request<br>
+去濾掉多重設備訊號</li>
+<li>利用裝置持續訊號分成: 20分鐘以下短期存在、14小時以上為機器設備</li>
+<li>p.57 利用camera當作ground true</li>
+</ul>
+<h3 class="mume-header" id="an-evaluation-of-crowd-counting-methods-features-and-regression-modelshttpswwwsemanticscholarorgpaperan-evaluation-of-crowd-counting-methods2c-features-ryan-denman76523c73654321710531d111a727f2584738347d"><a href="https://www.semanticscholar.org/paper/An-evaluation-of-crowd-counting-methods%2C-features-Ryan-Denman/76523c73654321710531d111a727f2584738347d">An evaluation of crowd counting methods, features and regression models</a></h3>
+
+<p>博士論文 Crowd Monitoring Using Computer Vision</p>
+<h1 class="mume-header" id="-%E7%B6%B2%E8%B7%AF%E5%B0%81%E5%8C%85%E9%80%B2%E8%A1%8C%E6%89%8B%E6%A9%9F%E8%A3%9D%E7%BD%AE%E8%BE%A8%E8%AD%98-">---- 網路封包進行手機裝置辨識 ----</h1>
+
+<p>2021/2/3, 有關一些無線網路封包進行手機裝置辨識(fingerprint).</p>
+<h3 class="mume-header" id="do-you-hear-what-i-hear-fingerprinting-smart-devices-through-embedded-acoustic-componentshttpsdlacmorgdoipdf10114526602672660325casa_token01oq2e30q6waaaaa3axqc9gwudsdzij2wq5z_lidgfkuaqjxsfi6h7hqorwxn6wkkbbporhchz099qtmn3wx8g0ahzg7c"><a href="https://dl.acm.org/doi/pdf/10.1145/2660267.2660325?casa_token=01Oq2E30q6wAAAAA%3Axqc9gwuDSDZij2wQ5z_lidgfkuaqJXsfi6H7hQOrWXn6WkKBBPORhCHz099qTmN3WX8g0AhZg7c">Do You Hear What I Hear? Fingerprinting Smart Devices Through Embedded Acoustic Components</a></h3>
+
+<ul>
+<li>這篇是用麥克風、揚聲器的音頻聲學特徵去做，<br>
+不同供應商生產的指紋設備進行指紋識別</li>
+</ul>
+<blockquote>
+<p>In terms of software based fingerprinting, researchers have looked at fingerprinting techniques that differentiate between unique devices over a Wireless Local Area Network (WLAN) simply through a timing analysis of 802.11 probe request frames [30].<br>
+<a href="https://dl.acm.org/doi/10.1145/1352533.1352542">Identifying unique devices through wireless fingerprinting</a></p>
+</blockquote>
+<blockquote>
+<p>Others have looked at exploiting the difference in firmware and device driver running on IEEE 802.11 compliant devices [37].<br>
+802.11 MAC headers have also been used to track unique devices [40].</p>
+</blockquote>
+<blockquote>
+<p>Open source toolkits like Nmap [50] and Xprobe [68] can remotely fingerprint an operating system by identifying unique responses from the TCP/IP networking stack.</p>
+</blockquote>
+<h3 class="mume-header" id="wireless-fingerprinting-uncertainty-prediction-based-on-machine-learninghttpswwwmdpicom1424-8220192324"><a href="https://www.mdpi.com/1424-8220/19/2/324">Wireless Fingerprinting Uncertainty Prediction Based on Machine Learning</a></h3>
+
+<p>use ANN to improve localization (2018), use wireless measurement as input.</p>
+<ul>
+<li>有些方法加入camera, LiDAR, inertial, sound sensor一起實作
+<ul>
+<li>
+<p>目標是預測什麼? 定位位置? 還是判斷手機廠牌?<br>
+該篇文章主要是在做<strong>室內定位</strong>，Section 3裡面有提到Dead-Reckoning<br>
+和wifi fingerprint的實驗結果。大致內容為：幾個tester拿著手機在<br>
+目標校園範圍行走(收集訓練資料)。<br>
+主要貢獻：Compared to the traditional DR/wifi fingerprinting integrated method that uses a constant measurement noise setting for th wireless fingerprinting-based location update,<br>
+the proposed method which sets the measurement noise adaptively by using ML approaches, had reduced the indoor localization errors by 23.3 % to 32.3 %.</p>
+</li>
+<li>
+<p>indoor fingerprinting: nearest neighbors, Gauss Process model, random forest, SVM<br>
+Input RSS measurement, Output 2-dim location</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="mume-header" id="a-passive-approach-to-wireless-device-fingerprintinghttpswwwresearchgatenetpublication224165671_a_passive_approach_to_wireless_device_fingerprinting"><a href="https://www.researchgate.net/publication/224165671_A_Passive_Approach_to_Wireless_Device_Fingerprinting">A Passive Approach to Wireless Device Fingerprinting</a></h3>
+
+<p>They propose a passive blackbox-based technique for determining<br>
+<strong>the type of access point (AP)</strong> connected to a network.<br>
+→ fingerprinting network devices</p>
+<h3 class="mume-header" id="device-fingerprinting-in-wireless-networks-challenges-and-opportunities-2016-ieeehttpsieeexploreieeeorgdocument7239531"><a href="https://ieeexplore.ieee.org/document/7239531">Device Fingerprinting in Wireless Networks: Challenges and Opportunities, 2016 IEEE</a></h3>
+
+<p>device fingerprinting, the process of gathering device information to generate <strong>device-specific signatures</strong> and using them to identify individual device</p>
+<h5 class="mume-header" id="vendor-specific-vs-device-specific-feature">Vendor specific v.s. Device specific feature</h5>
+
+<ul>
+<li>
+<p>一個應用:<br>
+三個步驟想法辨別 <strong>fake AP</strong>。透過設置一個Fingerprint Security分析當前APs的一些特徵。	去找到 fake AP:</p>
+<ol>
+<li>identifying relevant feature</li>
+<li>extractin and modeling feature</li>
+<li>device identification<br>
+<img src="./Note_Research_0309_files/Device-Fingerprinting-in-Wireless-Networks-Challenges-and Opportunities_4.png" style="vertical-align:middle;margin:0px 50px" width="80%"></li>
+</ol>
+</li>
+<li>
+<p>那些特徵? feature for device fingerprinting<br>
+根據網路七層架構分類</p>
+<ul>
+<li>Physical layer</li>
+<li>MAC layer</li>
+<li>Network and upper layer</li>
+</ul>
+<ol>
+<li>
+<p><strong>PHY Layer</strong>: derive from the received RF waveform.</p>
+<ul>
+<li>
+<p><strong>Location-dependent</strong> features alone are insufficient for fingerprinting as devices may move and the channel condition changes over time. (會因所處位置隨時間改變導致fingerprint特徵不一致)</p>
+<ul>
+<li>RSS (dB) (RSS measures the average signal power at the receiver and depend on the transmission power at the sender and the attenuation in the channel.)</li>
+<li>CSI (channel state information)</li>
+<li>CFR (channel frequency response)</li>
+</ul>
+</li>
+<li>
+<p><strong>Location-independent</strong> 比較偏向硬體上廠商實作差異</p>
+<ul>
+<li>channel width</li>
+<li>channel doping</li>
+<li>concentration</li>
+<li>oxide thickness</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>MAC Layer</strong>: for vendor specific, easy to extract and do not require specialized hardware.</p>
+<ul>
+<li>802.11 MAC header fields, frame type, subtype, Frame Control flags  (Bratus et al. [5])</li>
+<li>transmission rate, frame size, medium access time, transmission time, frame inter-arrival time  (Neumann et al. [15])</li>
+</ul>
+</li>
+<li>
+<p><strong>Network and Upper Layer</strong>:</p>
+<ul>
+<li>In [10], Gao et al. use TCP or UDP packet inter-arrival<br>
+time (ITA) from APs as signatures to distinguish AP types.</li>
+<li>web browser signatures</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>A comparsion of various features.<br>
+<img src="./Note_Research_0309_files/Device-Fingerprinting-in-Wireless-Networks-Challenges-and Opportunities_1.png" style="vertical-align:middle;margin:0px 50px" width="80%"></p>
+</blockquote>
+<h5 class="mume-header" id="fingerprinting-algorithms">Fingerprinting Algorithms</h5>
+
+<ol>
+<li>white-list based</li>
+<li>unsupervised learning</li>
+</ol>
+<blockquote>
+<p>White-list based fingerprinting algorithm using <strong>similarity</strong> measurement<br>
+<img src="./Note_Research_0309_files/Device-Fingerprinting-in-Wireless-Networks-Challenges-and Opportunities_2.png" style="vertical-align:middle;margin:0px 50px" width="80%"></p>
+</blockquote>
+<blockquote>
+<p>Unsupervised learning fingerprinting<br>
+<img src="./Note_Research_0309_files/Device-Fingerprinting-in-Wireless-Networks-Challenges-and Opportunities_3.png" style="vertical-align:middle;margin:0px 50px" width="80%"></p>
+</blockquote>
+<blockquote>
+<h4><a href="https://scholar.google.com.tw/scholar?start=10&amp;hl=zh-TW&amp;as_sdt=2005&amp;sciodt=0,5&amp;cites=12465362815768902904&amp;scipsc=">下一篇正在找引用此篇Device Fingerprinting in Wireless Networks: Challenges and Opportunities, 2016 IEEE的文章</a></h4>
+<hr>
+<ul>
+<li>[x] A Survey of Techniques for the Identification of Mobile Phones Using the Physical Fingerprints of the Built-In Components
+<ul>
+<li>physical feature = hardware fingerprint</li>
+<li>fingerprinting of human beings in biometric domain</li>
+<li>main techniques for identification of a mobile phone (e.g. camera, RF front-end)</li>
+</ul>
+</li>
+<li>[x] On the authentication of devices in the Internet of things</li>
+<li>[x] Data-Driven Design of Intelligent Wireless Networks: An Overview and Tutorial</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8737463&amp;casa_token=OY8Yk-QaPQsAAAAA:rmuUHHfuVUfte2EIVGnXRJFkXplHeOohBqMcJaJ4aMxrXjrm1B4typdOHSCWmH8LqDFI09T_69s&amp;tag=1">ORACLE: Optimized Radio clAssification through Convolutional neuraL nEtworks</a>
+<ul>
+<li>Similarity-based: In <a href="https://www.researchgate.net/publication/247119249_Passive_Data_Link_Layer_80211_Wireless_Device_Driver_Fingerprinting">[4]</a>, a passive fingerprinting technique is proposed that identifies the wireless device driver running on an IEEE 802.11 compliant node by collecting traces of probe request frames from the devices.</li>
+<li>Classifiation-based: The key innovation in our approach, termed ORACLE, is that it learns the unique modifications present within <strong>the in-phase (I) and quadrature-phase (Q) samples</strong> that are introduced in the signal as it passes through the transmitter chain.<br>
+<a href="https://ocw.nthu.edu.tw/ocw/index.php?page=chapter&amp;cid=116&amp;chid=1415">第19講 in-phase and quadrature-phase projection</a><br>
+<img src="./Note_Research_0309_files/In-phase-and-quadrature-phase-projection_1.PNG" style="vertical-align:middle;margin:0px 0px" width="100%"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8692418&amp;casa_token=MBzmO76aEt8AAAAA:qtVJmjHR_ZR5QxsKuzR4j7ZvQ7BhMIXWP84stERSI_MLMVDRCWb1Patw6wQ3vwEfQ1FEhiyThD8">A Robust RF Fingerprinting Approach Using Multisampling Convolutional Neural Network, IEEE 2019</a>
+<ul>
+<li>propose a <strong>multisampling convolutional neural network (MSCNN)</strong> to extract <strong>RF fingerprint</strong> from the selected ROI (region of interest) for classifuing <strong>ZigBee devices</strong>.
+<ul>
+<li>Receiver: universal software radio peripheral (USRP)</li>
+<li>Target for indentification: 54 CC2530 devices.</li>
+</ul>
+</li>
+<li>RF fingerprint:
+<ol>
+<li>transient: the duration of turn-on and turn-off</li>
+<li>steady-state: obtained by receivers like USRP<br>
+<img src="./Note_Research_0309_files/A-Robust-RF-Fingerprinting-Approach-Using-Multisampling-Convolutional-Neural-Network_1.PNG" style="vertical-align:middle;margin:0px 0px" width="90%"><br>
+<img src="./Note_Research_0309_files/A-Robust-RF-Fingerprinting-Approach-Using-Multisampling-Convolutional-Neural-Network_2.PNG" style="vertical-align:middle;margin:0px 0px" width="90%"><br>
+<img src="./Note_Research_0309_files/A-Robust-RF-Fingerprinting-Approach-Using-Multisampling-Convolutional-Neural-Network_3.PNG" style="vertical-align:middle;margin:0px 0px" width="90%"></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/el.2018.6404">Deep learning based RF fingerprinting for device identification and wireless security, 2018 IET</a>
+<ul>
+<li><strong>Summary</strong>: we will demonstrate that <strong>deep neural networks</strong> can be used to effectively implement <strong>device identification</strong> with high accuracy through <strong>automatic learning of device-dependent RF fingerprints</strong>. In contrast to existing works, the proposed approach does <strong>not require human intervention in defining what features should be used (called human-engineered features)</strong> in the RF fingerprinting process.</li>
+<li><strong>Data collection</strong>: transmission/reception experiments using seven identical<br>
+National Instruments <a href="https://en.wikipedia.org/wiki/Universal_Software_Radio_Peripheral">USRP software</a> defined radio modules<br>
+<img src="./Note_Research_0309_files/Deep-learning-based-RF-fingerprinting-for-device-identification-and-wireless-security_1.PNG" style="vertical-align:middle;margin:0px 0px" width="90%"><br>
+Baseband <strong>inphase (I) and quadrature (Q) samples</strong> are collected from the receiver. A subtle but important question is whether some level of physical layer correction should be implemented at the receiver.<br>
+<strong>猜測他是直接把raw I/Q sample 放入 LSTM 去train，然後做判斷這些訊號屬於哪一個transmitter(共6個)。</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/8600824?casa_token=PrTOk3pSt_kAAAAA:T1uIwaTn9wlIYlh73Bq47d-0gZ9sC01MON0vabKqDadUp1NOV0LtvxgAIwBM1ej4LkR-aew0zGk">IoT Device Fingerprint using Deep Learning, 2018 IEEE</a>
+<ul>
+<li>We connected two Apple devices iPad4 and iPhone 7 Plus to the router and created <strong>IAT (Inter Arrival Time of two packets)</strong> graphs for these two devices. We <strong>used Convolution Neural Network (CNN)</strong> to <strong>identify the devices</strong> and observed the accuracy of 86.7%.</li>
+<li>DFP (device fingerprint) model 1:
+<ul>
+<li>Pi as a router, <strong>probe frame</strong> that broadcast by Pi and <strong>response</strong> from the device.<br>
+<img src="./Note_Research_0309_files/IoT-Device-Fingerprint-using-Deep-Learning_1.PNG" style="vertical-align:middle;margin:0px 0px" width="90%"></li>
+</ul>
+</li>
+<li>DFP (device fingerprint) model 2:
+<ul>
+<li>Pi as a router, <strong>ping packets</strong> and IAT of ping packets.<br>
+<img src="./Note_Research_0309_files/IoT-Device-Fingerprint-using-Deep-Learning_2.PNG" style="vertical-align:middle;margin:0px 0px" width="90%"></li>
+</ul>
+</li>
+<li>DFP (device fingerprint) model 3:
+<ul>
+<li>all device connect to Pi using WiFi, capturing the <strong>UDP, ARP, ICMP packets</strong><br>
+<img src="./Note_Research_0309_files/IoT-Device-Fingerprint-using-Deep-Learning_3.PNG" style="vertical-align:middle;margin:0px 0px" width="90%"></li>
+</ul>
+</li>
+<li>DFP (device fingerprint) model 4:
+<ul>
+<li>all device connect to Pi using WiFi, capturing the <strong>TCP, IP packets</strong><br>
+<img src="./Note_Research_0309_files/IoT-Device-Fingerprint-using-Deep-Learning_4.PNG" style="vertical-align:middle;margin:0px 0px" width="90%"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Given the IAT graphs of devices (iPad4 and iPhone7 plus)<br>
+→  image preprocessing, shear transformation<br>
+→  CNN model</li>
+<li>Note:  <strong>Packet sniffing</strong> application with filters for different types of packets logged arrival time with features, e.g. <strong>IP addresses</strong>, <strong>MAC addresses</strong> and <strong>Port addresses</strong> of the respective devices connected to the router shown in the Figures 1 - 4.</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8631016">RF Fingerprinting of IoT Devices Based on Transient Energy Spectrum, IEEE 2019</a>
+<ol>
+<li>
+<ul>
+<li>turn-on transient behavior of WiFi devices is explained through instantaneous characteristics of signals.</li>
+<li>RF fingerprinting method based on transient energy spectrum</li>
+</ul>
+</li>
+<li>RF fingerprints be extracted from different regions of transmitted signals</li>
+</ol>
+<ul>
+<li>turn-on transient</li>
+<li>preamble <a href="https://ir.nctu.edu.tw/bitstream/11536/41313/5/754905.pdf">前導信號，可作為同步用途，包括封包偵測、頻率偏移、碼框同步與通道估算</a></li>
+<li>data regions<br>
+<img src="./Note_Research_0309_files/preamble_1.PNG" style="vertical-align:middle;margin:0px 0px" width="80%"><br>
+<img src="./Note_Research_0309_files/preamble_2.PNG" style="vertical-align:middle;margin:0px 0px" width="80%"></li>
+</ul>
+<ol start="3">
+<li>使用 instentaneous amplitude of signal<br>
+<img src="./Note_Research_0309_files/RF-Fingerprinting-of-IoT-Devices-Based-on-Transient-Energy-Spectrum_2.PNG" style="vertical-align:middle;margin:0px 0px" width="80%"></li>
+<li>流程:
+<ul>
+<li>intermediate frequency (IF) signals</li>
+<li>分析transient訊號、轉換出spectral fingerprint特徵 (signal characteristics are instantaneous amplitude, phase, and frequency)</li>
+<li>classification TA1, TA2, TA3, TA4, TA5, ...<br>
+<img src="./Note_Research_0309_files/RF-Fingerprinting-of-IoT-Devices-Based-on-Transient-Energy-Spectrum_1.PNG" style="vertical-align:middle;margin:0px 0px" width="80%"><br>
+<img src="./Note_Research_0309_files/RF-Fingerprinting-of-IoT-Devices-Based-on-Transient-Energy-Spectrum_3.PNG" style="vertical-align:middle;margin:0px 0px" width="80%"><br>
+<img src="./Note_Research_0309_files/RF-Fingerprinting-of-IoT-Devices-Based-on-Transient-Energy-Spectrum_4.PNG" style="vertical-align:middle;margin:0px 0px" width="80%"></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/8885429/keywords#keywords">IoT Device Fingerprinting Machine Learning based Encrypted Traffic Analysis, 2019 IEEE</a>
+<ul>
+<li>To discover the <strong>types of the IoT devices transmitting traffic in the network</strong> using machine learning.
+<ol>
+<li><strong>IoT fingerprint attack</strong> (work even when device use encryption)</li>
+<li><strong>characteristics of IoT devices</strong> <a href="https://iotanalytics.unsw.edu.au/iottraces">data collected from IBM and Cisco</a></li>
+<li>the speed and accurancy of the proposed attack</li>
+</ol>
+</li>
+<li>Goal: (Classification) classifiy each <strong>encrypted traffic</strong> to <strong>the device type</strong>
+<ol>
+<li>extract feature
+<ul>
+<li>Protocol: the types of dominant protocols, port intervals, packet size, packet quantity, availability time, inter-arrival time, cumulative count, etc.<br>
+<img src="./Note_Research_0309_files/IoT-Device-Fingerprinting-Machine-Learning-based-Encrypted-Traffic-Analysis_1.PNG" style="vertical-align:middle;margin:0px 0px" width="80%"></li>
+<li>Statistical of traffic (data): minimum, maximum, mean, median, standard deviation, variance, etc.<br>
+<img src="./Note_Research_0309_files/IoT-Device-Fingerprinting-Machine-Learning-based-Encrypted-Traffic-Analysis_2.PNG" style="vertical-align:middle;margin:0px 0px" width="80%"><br>
+→ relevant: <strong>inter-arrival time</strong>, <strong>packet volume</strong></li>
+</ul>
+</li>
+<li>make classifier (k-NN, SVM, RF, AdaBoost, ExtraTree)</li>
+<li>inference the type of devices.<br>
+<img src="./Note_Research_0309_files/IoT-Device-Fingerprinting-Machine-Learning-based-Encrypted-Traffic-Analysis_3.PNG" style="vertical-align:middle;margin:0px 0px" width="100%"></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>dynamic slide window in traffic data</p>
+</blockquote>
+<blockquote>
+<p>一個封包（packet）分成兩個部份，包括控制資訊，也就是表頭資料（header），和資料本身，也就是負載（payload）。</p>
+</blockquote>
+<blockquote>
+<p>傳輸層協定，如傳輸控制協定（TCP）與使用者資料包協定（UDP），在封包表頭中，定義了來源埠號與目的埠號。一個通訊埠號使用16位元無符號整數（unsigned integer）來表示，其範圍介於0與65535之間。在TCP協定中，埠號0是被保留的，不可使用。<br>
+1--1023 系統保留，只能由root使用者使用。1024---4999 由客戶端程式自由分配。5000---65535 由伺服器端程式自由分配在UDP協定中，來源埠號是可以選擇要不要填上，如果設為0，則代表沒有來源埠號。</p>
+</blockquote>
+<hr>
+<h3 class="mume-header" id="2020226-ai%E9%A0%98%E8%88%AAsafe-box%E9%96%8B%E6%9C%83">2020/2/26 AI領航(safe box)開會</h3>
+
+<ul>
+<li>
+<p>IoT資訊安全風險檢測</p>
+<ul>
+<li>
+<p>網路威脅檢測</p>
+<ul>
+<li>周遭網路狀況風險判斷? 內網外網</li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>弱點掃描</p>
+<ul>
+<li>IoT自身漏洞</li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>智慧化IoT之情資分析</p>
+<ul>
+<li>情資進來後，如何分析、處理策略，通報客戶。</li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>合規/法尊組態檢測</p>
+</li>
+</ul>
+</li>
+<li>
+<p>場域:</p>
+<ol>
+<li>交通場域</li>
+<li>商圈場域</li>
+</ol>
+</li>
+<li>
+<p>商業模式:<br>
+企業、訂閱制、</p>
+<ol start="0">
+<li>網路威脅檢測</li>
+<li>弱點掃描</li>
+<li>智慧化IoT之情資分析</li>
+<li>合規/法尊組態檢測</li>
+</ol>
+</li>
+<li>
+<p>無線資料(天線)+有線資料(網路設備)<br>
+<a href="https://aiip.tdp.org.tw/template/aiip_ai/index_13.html">AI 新創領航計畫</a><br>
+<a href="https://www.taics.org.tw/Publishing.aspx?PubID=3074">台灣資通產業標準協會 - 網路攝影機資安測試規範</a></p>
+</li>
+</ul>
+<hr>
+<h3 class="mume-header" id="20210206-facebook-prophet-time-series-forecast">2021/02/06 Facebook Prophet: time series forecast</h3>
+
+<p>Prophet，Facebook在2017年2月23日開源的時序預測庫。我們也將用它預測Medium每天發表的文章數。(<a href="https://www.mdeditor.tw/pl/20gi/zh-tw">https://www.mdeditor.tw/pl/20gi/zh-tw</a>)</p>
+<p><a href="https://github.com/facebook/prophet">GitHub: prophet</a><br>
+<a href="https://facebook.github.io/prophet/docs/quick_start.html#python-api">Offical getting start</a></p>
+<h3 class="mume-header" id="20201124-%E6%89%BF%E6%BE%94%E5%88%86%E4%BA%AByolo">2020/11/24  承澔分享YOLO</h3>
+
+<ul>
+<li>
+<p>CNN</p>
+</li>
+<li>
+<p>RCNN: two-step: region detection, then CNN to classification<br>
+→ fastRCNN, fasterRCNN</p>
+<pre class="language-text">  one-step: 只跑一次CNN就可以確定有興趣的區域，然後判斷圖片
+  
+  原本y output只有classification的資訊，
+  增加位置資訊(物件在3x3裡的哪一格)、(那一格的高度與寬度)
+  
+  Data格式: pascal voc xml
+</pre>
+</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  </body></html>
