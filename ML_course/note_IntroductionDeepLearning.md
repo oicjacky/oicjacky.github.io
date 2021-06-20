@@ -38,10 +38,10 @@ step 3. pick the best function
 
 Note: **Fully Connect Feedforward Network** 每層的每個neuron都會和前一層所有neuron output連接
 
->   Input a vector, output vector: 
-    $\bold{y} = f(\bold{x})$
-    Architecture:　input layer > hidden layer > output layer
-    Deep = Many hidden layers
+> Input a vector, output vector: 
+  $$\textbf{y} = f(\textbf{x})$$
+  Architecture:　input layer > hidden layer > output layer  
+  Deep = Many hidden layers
 
 How a network work ? Matrix Operation.  
 
@@ -72,11 +72,11 @@ such **Cross Entropy**, **MSE**, **MAPE** ...
 Use **Gradient Descent** to find the parameter to minimize the loss.
 <img src="/assets/images/Machine Learning, Hung-yi Lee/IntroductionDeepLearning_5.JPG" style="vertical-align:middle; margin:0px 50px" width="80%">
 
-Note: the updating of weight $\partial L / \partial w$ can be computed by **Backpropagation**.
+Note: the updating of weight $$\partial L / \partial w$$ can be computed by **Backpropagation**.
 <img src="/assets/images/Machine Learning, Hung-yi Lee/IntroductionDeepLearning_6.JPG" style="vertical-align:middle; margin:0px 50px" width="80%">
 
 > **Universality Theorem**:
-  Any continuous function f $f: R^N \rightarrow R^M$ can be realized by a network with **one hidden layer** given **enough hidden neurons**.
+  Any continuous function f $$f: R^N \rightarrow R^M$$ can be realized by a network with **one hidden layer** given **enough hidden neurons**.
 
 #### So, why "Deep" neural network not "Fat" neural network?   next lecture.
 
@@ -106,3 +106,6 @@ The first stage of speech recognition
 
 傳統上，Gaussian Mixture Model (GMM)說each state has a stationary distribution for acoustic features.  
 → 延伸 subspace GMM
+
+
+[← previous page](/2021-01-01-note-ML-Syllabus/index.html)

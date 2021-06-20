@@ -5,10 +5,10 @@
 
 # --- Required options --- #
 
-production_url : https://oicjacky.github.io/beautiful-jekyll/
+production_url : https://oicjacky.github.io/
 
 # Name of website
-title: My website
+title: Home
 
 # Short description of your site
 description: A virtual proof that I'm awesome

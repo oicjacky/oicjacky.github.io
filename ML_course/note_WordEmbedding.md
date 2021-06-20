@@ -59,11 +59,11 @@ word embedding是一個無監督的方法(unsupervised approach)，只要讓機�
 
 #### Count based
 
-假設$w_i$和$w_j$這兩個詞彙常常在同一篇文章中出現(co-occur)，其中word vector分別用$V(w_i)$和$V(w_j)$來表示，則$V(w_i)$和$V(w_j)$會比較相似、接近。
+假設$$w_i$$和$$w_j$$這兩個詞彙常常在同一篇文章中出現(co-occur)，其中word vector分別用$$V(w_i)$$和$$V(w_j)$$來表示，則$$V(w_i)$$和$$V(w_j)$$會比較相似、接近。
 
-如何找到$V(w_i)$和$V(w_j)$ ? 
+如何找到$$V(w_i)$$和$$V(w_j)$$ ? 
 
-> 假設$N_{i,j}$是$w_i$和$w_j$在相同文章裡同時出現的次數，我們希望它與的內積越接近越好(i.e. $\min{N_{i,j} - V(w_i)V(w_j) }$，這個思想和之前的文章中提到的矩陣分解(matrix factorization)的思想其實是一樣的
+> 假設$$N_{i,j}$$是$$w_i$$和$$w_j$$在相同文章裡同時出現的次數，我們希望它與的內積越接近越好(i.e. $$\min{N_{i,j} - V(w_i)V(w_j) }$$，這個思想和之前的文章中提到的矩陣分解(matrix factorization)的思想其實是一樣的
 
 這種方法有一個很代表性的例子是[Glove Vector, research by stanford.](https://nlp.stanford.edu/projects/glove/)
 
@@ -72,11 +72,11 @@ word embedding是一個無監督的方法(unsupervised approach)，只要讓機�
 
 #### Prediction based
 
-概念為給定一個句子，希望模型能夠根據當前的word $w_{i-1}$，預測下一個出現的$w_i$是什麼。
+概念為給定一個句子，希望模型能夠根據當前的word $$w_{i-1}$$，預測下一個出現的$$w_i$$是什麼。
 
-首先用1-of-N encoding把$w_{i-1}$作為neural network的input，而output則為與$w_i$相同長度的機率向量，目標為預測$w_i$。
+首先用1-of-N encoding把$$w_{i-1}$$作為neural network的input，而output則為與$$w_i$$相同長度的機率向量，目標為預測$$w_i$$。
 
-把第一個hidden layer的input $z_1,z_2,...$拿出來，它們所組成的$Z$就是word的另一種表示方式，當我們input不同的詞彙，向量就會發生變化。
+把第一個hidden layer的input $$z_1,z_2,...$$拿出來，它們所組成的$$Z$$就是word的另一種表示方式，當我們input不同的詞彙，向量就會發生變化。
 
 也就是說，第一層hidden layer的維數可以由我們決定，而它的input又唯一確定了一個word，因此提取出第一層hidden layer的input，實際上就得到了一組可以自定義維數的Word Embedding的向量。
 
@@ -87,7 +87,7 @@ word embedding是一個無監督的方法(unsupervised approach)，只要讓機�
 
 prediction-based方法根據詞彙的上下文來了解該詞彙的含義。
 
-假設在兩篇文章中，“蔡英文”和“馬英九”代表 $w_{i-1}$，“宣誓就職”代表$w_i$，希望輸入“蔡英文”或“馬英九”，輸出的vector中對應“宣誓就職”詞彙的概率值是高的。
+假設在兩篇文章中，“蔡英文”和“馬英九”代表 $$w_{i-1}$$，“宣誓就職”代表$$w_i$$，希望輸入“蔡英文”或“馬英九”，輸出的vector中對應“宣誓就職”詞彙的概率值是高的。
 
 為了使這兩個不同的input通過NN能得到相同的output，就必須在進入hidden layer之前，就通過weight的轉換將這兩個input vector投影到位置相近的低維空間上
 
@@ -95,7 +95,7 @@ prediction-based方法根據詞彙的上下文來了解該詞彙的含義。
 
 因此，詞彙上下文的聯繫就自動被考慮在這個prediction model裡面
 
-總結一下，對1-of-N編碼進行Word Embedding降維的結果就是神經網絡模型第一層hidden layer的輸入向量$[z_1, z_2, ...]^T$，該向量同時也考慮了上下文詞彙的關聯，我們可以通過控制第一層hidden layer的大小從而控制目標降維空間的維數
+總結一下，對1-of-N編碼進行Word Embedding降維的結果就是神經網絡模型第一層hidden layer的輸入向量$$[z_1, z_2, ...]^T$$，該向量同時也考慮了上下文詞彙的關聯，我們可以通過控制第一層hidden layer的大小從而控制目標降維空間的維數
 
 <img src="/assets/images/Machine Learning, Hung-yi Lee/WordEmbedding_6.JPG" style="vertical-align:middle; margin:0px 50px" width="80%" >
 
@@ -112,33 +112,33 @@ prediction-based方法根據詞彙的上下文來了解該詞彙的含義。
 
 <img src="/assets/images/Machine Learning, Hung-yi Lee/WordEmbedding_7.JPG" style="vertical-align:middle; margin:0px 50px" width="80%" >
 
-如果我們不這麼做，那把同一個word放在的$w_{i-2}$和$w_{i-1}$的位置，得到的Embedding結果是會不一樣的，把兩組weight設置成相同，可以使與的相對位置不會對結果產生影響
+如果我們不這麼做，那把同一個word放在的$$w_{i-2}$$和$$w_{i-1}$$的位置，得到的Embedding結果是會不一樣的，把兩組weight設置成相同，可以使與的相對位置不會對結果產生影響
 
 除此之外，這麼做還可以通過共享參數的方式有效地減少參數量，不會由於input的word數量增加而導致參數量劇增
 
 
 ###### Formulation
 
-假設$w_{i-2}$的1-of-N為$x_{i-2}$，$w_{i-1}$為$x_{i-1}$，維數均為$|V|$，表示數據中的words總數
+假設$$w_{i-2}$$的1-of-N為$$x_{i-2}$$，$$w_{i-1}$$為$$x_{i-1}$$，維數均為$$|V|$$，表示數據中的words總數
 
-hidden layer的input為向量$z$，長度為$|Z|$，表示降維後的維數
+hidden layer的input為向量$$z$$，長度為$$|Z|$$，表示降維後的維數
 
 $$z = W_1 x_{i-2} + W_2 x_{i-1}$$
 
-其中$W_1$和$W_2$都是$|Z| \times |V|$的weight matrix
+其中$$W_1$$和$$W_2$$都是$$|Z| \times |V|$$的weight matrix
 
-我們強迫讓$W_1 = W_2 = W$，此時$z = W(x_{i-2}+x_{i-1})$
-因此，只要我們得到了這組參數$W$，就可以與1-of-N編碼相乘得到word embedding的結果
+我們強迫讓$$W_1 = W_2 = W$$，此時$$z = W(x_{i-2}+x_{i-1})$$
+因此，只要我們得到了這組參數$$W$$，就可以與1-of-N編碼相乘得到word embedding的結果
 
 <img src="/assets/images/Machine Learning, Hung-yi Lee/WordEmbedding_8.JPG" style="vertical-align:middle; margin:0px 50px" width="80%" >
 
 
 ###### In Practice
 
-那在實際操作上，我們如何保證$W_1$和$W_2$一樣呢？
+那在實際操作上，我們如何保證$$W_1$$和$$W_2$$一樣呢？
 
 - 首先在訓練的時候就要給一樣的初始值
-- $w_i$和$w_j$的更新過程相同
+- $$w_i$$和$$w_j$$的更新過程相同
 
 <img src="/assets/images/Machine Learning, Hung-yi Lee/WordEmbedding_9.JPG" style="vertical-align:middle; margin:0px 50px" width="80%" >
 
@@ -164,3 +164,5 @@ $$z = W_1 x_{i-2} + W_2 x_{i-1}$$
 
 <img src="/assets/images/Machine Learning, Hung-yi Lee/WordEmbedding_11.JPG" style="vertical-align:middle; margin:0px 50px" width="80%" >
 
+
+[← previous page](/2021-01-01-note-ML-Syllabus/index.html)

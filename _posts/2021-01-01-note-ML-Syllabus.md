@@ -45,13 +45,13 @@ published: true
 ----
 ## Notes
 
-- [Introduction of Deep Learning](../ML_course/note_IntroductionDeepLearning/index.html)
+- [Introduction of Deep Learning](/ML_course/note_IntroductionDeepLearning/index.html)
 
-- [Convolutional Neural Network](../ML_course/note_CNN/index.html)
+- [Convolutional Neural Network](/ML_course/note_CNN/index.html)
 
-- [Recurrent Neural Network](../ML_course/note_RNN/index.html)
+- [Recurrent Neural Network](/ML_course/note_RNN/index.html)
 
-- [Word Embedding](../ML_course/note_WordEmbedding/index.html)
+- [Word Embedding](/ML_course/note_WordEmbedding/index.html)
 
 
 <!-- ----

@@ -58,10 +58,10 @@ Take more look at **Colorful image**.
 
 #### For filter
 In the same convolution layer,
-Suppose the output of the **k-th filter** is a 11x11 matrix, $a_{ij}^k$,
-then define **degree of the activation of the k-th filter**: $a^k = \sum_{i=1}^{11}\sum_{j=1}^{11} a^k_{ij}$,
+Suppose the output of the **k-th filter** is a 11x11 matrix, $$a_{ij}^k$$,
+then define **degree of the activation of the k-th filter**: $$a^k = \sum_{i=1}^{11}\sum_{j=1}^{11} a^k_{ij}$$,
 we can find the image that maximize degree of activation as 
-$$ x_k^* = \argmax_x a^k , \hspace{0.1cm} for \, k=1,2,... $$
+$$ x_k^* = \mathop{\arg\max}_x a^k , \hspace{0.1cm} for \, k=1,2,... $$
 <img src="/assets/images/Machine Learning, Hung-yi Lee/CNN_9.JPG" style="vertical-align:middle; margin:0px 80px" width="60%" >
 上圖僅挑選了12張image作為展示(50個filter理論上可分別找50張image使對應的activation最大)，這些image有個共同特徵，它們反覆出現的某種texture(紋路)，比如說第三張image上佈滿了小小的斜條紋，這意味著第三個filter的工作就是detect圖上有沒有斜條紋，要知道現在每個filter檢測的都只是圖上一個小小的範圍而已，所以圖中一旦出現一個小小的斜條紋，這個filter就會被activate，相應的output也會比較大，所以如果整張image上佈滿這種斜條紋的話，這個時候它會最興奮，filter的activation程度是最大的，相應的output值也會達到最大。
 
@@ -72,18 +72,18 @@ $$ x_k^* = \argmax_x a^k , \hspace{0.1cm} for \, k=1,2,... $$
 #### For output
 <img src="/assets/images/Machine Learning, Hung-yi Lee/CNN_11.JPG" style="vertical-align:middle; margin:0px 80px" width="60%" >
 
-$$ x^* = \argmax_x y^i , \hspace{0.1cm} for \, i=1,2,...,N $$
+$$ x^* = \mathop{\arg\max}_x y^i , \hspace{0.1cm} for \, i=1,2,...,N $$
 
 上面每一張圖分別對應著真實數字0-8，發現數字1所對應neuron output值最大的image其實一點也不像1，就像是電視機壞掉的樣子。為了驗證程序有沒有bug，這裡做一個實驗，把上述得到的image作為testing data丟到CNN裡面，結果classify的結果確實認為這些image就對應著數字0-8。
 
 #### 所以neural network所學到的東西跟我們人類想像認知是不一樣的 !
 
-- Penalizing on all pixel values $x_{ij}$, we want a image $x_{ij}$ contains less noise (some of them be 0):
+- Penalizing on all pixel values $$x_{ij}$$, we want a image $$x_{ij}$$ contains less noise (some of them be 0):
   
-    $$x^* = \argmax_x (y^i - \sum_{i,j} |x_{ij}|)$$
+    $$x^* = \mathop{\arg\max}_x (y^i - \sum_{i,j} |x_{ij}|)$$
 
     我們對x做一些regularization，對找出來的x做一些constraint(限制約束)，我們應該告訴machine說，雖然有一些x可以讓你的y很大，但是它們不是數字。
-    這次我們希望找一個input x，它可以同時使$y^i$最大且讓$\sum_{i,j}x_{ij}$越小越好，亦即找出來的image，大部分的地方是沒有塗顏色的，只有少數數字筆劃在的地方才有顏色出現。
+    這次我們希望找一個input x，它可以同時使$$y^i$$最大且讓$$\sum_{i,j}x_{ij}$$越小越好，亦即找出來的image，大部分的地方是沒有塗顏色的，只有少數數字筆劃在的地方才有顏色出現。
     <img src="/assets/images/Machine Learning, Hung-yi Lee/CNN_12.JPG" style="vertical-align:middle; margin:0px 80px" width="60%" >
     加上這個constraint後，得到的結果會像圖右側所示一樣，已經隱約有些可以看出來是數字的形狀了。
 
@@ -138,3 +138,6 @@ max pooling架構：針對property 3
 針對不同的application要設計符合它特性的network structure，而不是生硬套用，這就是CNN架構的設計理念：
 
 應用之道，存乎一心
+
+
+[← previous page](/2021-01-01-note-ML-Syllabus/index.html)
