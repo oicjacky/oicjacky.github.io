@@ -23,7 +23,7 @@ config = configparser.ConfigParser()
 configuration = {
     'id' : 3,
     'setup' : True,
-    'antenna' : ['b827eb8a8f1f', 'b827eb8f8147'],
+    'antenna' : ['dlkfjd48lgcd', 'vklfjvlkfjd'],
     'location': 'Taipei_FiveArea',
     'time_range': {
         "gte": "2020-07-01T00:00:00+08",
