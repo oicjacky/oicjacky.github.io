@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Machine Learning, Hung-yi Lee (NTU course 2020, Spring)"
-subtitle: 
+title: "Machine Learning, Hung-yi Lee"
+subtitle: 'NTU course 2020, Spring'
 tags: [course, in progress]
 comments: true
 published: true

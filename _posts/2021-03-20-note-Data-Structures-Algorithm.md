@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Data Structures and Algorithm"
-subtitle: "about linked list & array"
+subtitle: "Linked list, Array"
 tags: [quick note]
 comments: true
 published: true
