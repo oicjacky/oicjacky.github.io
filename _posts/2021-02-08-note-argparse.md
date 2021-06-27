@@ -50,7 +50,7 @@ Note: add some help information for usage.
 parser.add_argument('echo',
                     help = 'echo the string you use here')
 parser.add_argument('square',
-                    help = "display a sqyare of a given number",
+                    help = "display a square of a given number",
                     type = float)
 ```
 
