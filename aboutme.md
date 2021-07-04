@@ -13,9 +13,11 @@ I have the following interests:
 
 How about you ? share with me !
 
-### My story (drafts)
+Here is my [resume](https://drive.google.com/file/d/1BUhwdh8YbfR7wVBBM_hTV_8lGMiTq--h/view?usp=sharing).
 
-Here is my [CV/Resume](https://www.cakeresume.com/610611105?locale=zh-TW).
+### My story
+
+<!-- Here is my [CV/Resume](https://www.cakeresume.com/610611105?locale=zh-TW). -->
 
 從小對數學科學感興趣，國中參加AMC數學比賽與校內團體科學競賽。大學選擇數學系，在學習微積分、高等數學、機率統計、迴歸分析的同時，擔任台灣揚帆協會的課輔老師。為花蓮秀林地區國中小的小孩課後輔導，陪伴這群純真懵懂孩子長大，感受孩子追求知識源源不絕的好奇心與動力。
 
