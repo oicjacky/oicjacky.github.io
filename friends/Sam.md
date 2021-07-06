@@ -5,7 +5,7 @@ subtitle:
 # page-img: "/assets/sam/bg04.png"
 ---
 
-<div class="card bg-transparent" style="width: 45rem;">
+<div class="card bg-transparent" style="/* width: 45rem; */">
   <div class="row">
     <div class="col-sm-6">
       <img src="\assets\sam\S__59899915.jpg" class="rounded mx-auto d-block" width="80%">
@@ -27,7 +27,7 @@ subtitle:
 <p>  </p>
 
 
-<div class="card bg-transparent" style="width: 45rem;">
+<div class="card bg-transparent" style="/* width: 45rem; */">
   <div class="row">
     <div class="col-sm-6">
       <img src="\assets\sam\S__103776264.jpg" class="rounded mx-auto d-block" width="78.5%">
@@ -49,7 +49,7 @@ subtitle:
 <p>  </p>
 
 
-<div class="card bg-transparent" style="width: 45rem;">
+<div class="card bg-transparent" style="/* width: 45rem; */">
   <img src="\assets\sam\chosen.png" class="rounded mx-auto d-block" width="60%">
   <div class="card-body">
     <h5 class="card-title">士宸</h5>
@@ -59,7 +59,7 @@ subtitle:
 <p>  </p>
 
 
-<div class="card bg-transparent" style="width: 45rem;">
+<div class="card bg-transparent" style="/* width: 45rem; */">
   <div class="row">
     <div class="col-sm-6">
       <img src="\assets\sam\messageImage_1625540784852.jpg" class="rounded mx-auto d-block" style="vertical-align:middle; margin:70px 0px" width="90%">
@@ -86,7 +86,7 @@ subtitle:
 <p>  </p>
 
 
-<div class="card bg-transparent" style="width: 45rem;">
+<div class="card bg-transparent" style="/* width: 45rem; */">
   <div class="row">
     <div class="col-sm-4">
       <img src="\assets\sam\S__20987940.jpg" class="rounded mx-auto d-block" 
@@ -115,7 +115,7 @@ subtitle:
 <p>  </p>
 
 
-<div class="card bg-transparent" style="width: 45rem;">
+<div class="card bg-transparent" style="/* width: 45rem; */">
   <div class="row">
     <div class="col-sm-3">
       <img src="\assets\sam\san01.png" class="rounded mx-auto d-block" 
