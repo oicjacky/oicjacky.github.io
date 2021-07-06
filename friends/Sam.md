@@ -163,4 +163,4 @@ subtitle:
 </div>
 
 
-<p align="right"><I>2021/07/07 the day leave TDSC and fly</I></p>
+<p align="right"><I>2021/07/07 the day you leave TDSC and fly</I></p>
