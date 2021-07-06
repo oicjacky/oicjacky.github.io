@@ -116,6 +116,20 @@ subtitle:
 
 
 <div class="card bg-transparent" style="/* width: 45rem; */">
+  <img src="\assets\sam\barbie01.jpg" class="rounded mx-auto d-block" width="50%">
+  <div class="card-body">
+    <h5 class="card-title">Barbie</h5>
+    <p class="card-text">
+    加油<br>
+    祝你未來一切順利
+    </p>
+    <p align="right"><I>By Barbie</I></p>
+  </div>
+</div>
+<p>  </p>
+
+
+<div class="card bg-transparent" style="/* width: 45rem; */">
   <div class="row">
     <div class="col-sm-3">
       <img src="\assets\sam\san01.png" class="rounded mx-auto d-block" 
@@ -138,7 +152,7 @@ subtitle:
     <h5 class="card-title">3騰</h5>
       <p class="card-text">
       Dear Sam，<br>
-      從大安時期對你的第一印象是，帶點美式風的CS coder，第一次用美湯bs4爬蟲，那邊一起看document。到宏匯三樓偶爾一起下班回家聽你對自我時間管控及dead line全力以赴的自信，讓我覺得很佩服與欣賞。<br>
+      從大安時期對你的第一印象是，帶點美式風的CS coder，第一次用美湯bs4爬蟲，那邊一起看document。到宏匯三樓偶爾一起下班回家聽你對自我時間管控及deadline全力以赴的自信，讓我覺得很佩服與欣賞。<br>
       對你更熟識源自於<b>三存</b>，與你討論工作上架構流程合作，不時能把我拉出遮蔽箱與北市府案痛苦泥沼。更別提你說：「有什麼煩惱，下班後臥推一下就消失。」的<b>內湖怠惰健身房</b>，想到<b>拜五肥宅們動起來</b>Just Dance配麥克雞塊，以及<b>永豆宵夜</b>三人點了12顆荷包蛋邊唱歌走在江南街上，魔法辦公室在晴天下雨天充滿你的<b>黑色幽默</b>。這段時間經歷的回憶太多太美，能一起來到台資科工作真的很棒!<br>
       &nbsp;<br>
       祝福你在美國的生活與工作順利!<br>
@@ -149,4 +163,4 @@ subtitle:
 </div>
 
 
-<p align="right"><I>2021/07/07 the day you leave TDSC and fly</I></p>
+<p align="right"><I>2021/07/07 the day leave TDSC and fly</I></p>
