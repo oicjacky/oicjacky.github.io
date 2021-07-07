@@ -18,7 +18,8 @@ subtitle:
     <h5 class="card-title">小寶</h5>
     <p class="card-text">
     Dear 山姆<br>
-    在太平洋的另一邊要好好生活，千萬不要變成<b>渣男</b>～祝福你早早學成歸國回來找我們玩 &#x1F606;<br>
+    印象中第一次跟你說到話，應該是在大安邀請你跳 just dance的時候吧~ 時間過得好快，你在太平洋的另一邊要好好生活，千萬不要變成<b>渣男</b>～祝福你早早學成歸國回來找我們玩 &#x1F606;<br>
+    &nbsp;<br>
     對惹，放在公司的那個白色盤子是你的嗎？我可以佔為己有嗎？<br>
     </p>
     <p align="right"><I>By 阿寶</I></p>
@@ -130,20 +131,74 @@ subtitle:
 
 
 <div class="card bg-transparent" style="/* width: 45rem; */">
+  <img src="\assets\sam\arisa.jpg" class="rounded mx-auto d-block" width="50%">
+  <div class="card-body">
+    <h5 class="card-title">怡真</h5>
+    <p class="card-text">
+    Hi ~Sam 祝你在美國一切順利呀 ！ 然後交到人美心善的女朋友哈哈哈<br>
+    BTW 如果可不可在美國有分店 可以去支持一下喔&#x1F60D;<br>
+    期待咱們的下次聚會&#x1F942;&#x1F942;&#x1F942;
+    </p>
+    <p align="right"><I>By Arisa</I></p>
+  </div>
+</div>
+<p>  </p>
+
+
+<div class="card bg-transparent" style="/* width: 45rem; */">
   <div class="row">
-    <div class="col-sm-3">
-      <img src="\assets\sam\san01.png" class="rounded mx-auto d-block" 
-      style="vertical-align:middle; margin:25px 50px" width="100%">
+    <div class="col-sm-6">
+      <img src="\assets\sam\adam01.jpg" class="rounded mx-auto d-block" 
+      style="vertical-align:middle; margin:25px 0px" width="80%">
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-6">
+      <img src="\assets\sam\adam02.jpg" class="rounded mx-auto d-block" 
+      style="vertical-align:middle; margin:0px 0px" width="35%">
+    </div>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">步凡</h5>
+    <p class="card-text">
+    遠在他鄉，想念我莫過於想念台灣美食吧！<br>
+    送你曾經宜蘭一起共享的番割田，以後天天大吉大利。
+    </p>
+    <p align="right"><I>By Adam</I></p>
+  </div>
+</div>
+<p>  </p>
+
+
+<div class="card bg-transparent" style="/* width: 45rem; */">
+  <img src="\assets\sam\san01.png" class="rounded mx-auto d-block" 
+      style="vertical-align:middle; margin:25px 50px" width="80%">
+  <div class="card-body">
+    <h5 class="card-title">介庭</h5>
+    <p class="card-text">
+    S-A-M<br>
+    真沒想過疫情後，你就消失在我左邊座位<br>
+    在公司少了互嗆，少了好多樂趣QQ<br>
+    不過零食的誘惑還是很多.....<br>
+    祝福你未來一切安好<br>
+    記得菇菇底端要切掉再煮啊!!!<br>
+    goodbye my friend
+    </p>
+    <p align="right"><I>By Jennifer</I></p>
+  </div>
+</div>
+<p>  </p>
+
+
+<div class="card bg-transparent" style="/* width: 45rem; */">
+  <div class="row">
+    <div class="col-sm-4">
       <img src="\assets\sam\san02.png" class="rounded mx-auto d-block" 
-      style="vertical-align:middle; margin:30px 50px" width="100%">
+      style="vertical-align:middle; margin:40px 50px" width="100%">
     </div>  
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <img src="\assets\sam\san03.png" class="rounded mx-auto d-block" 
       style="vertical-align:middle; margin:0px 50px" width="100%">
     </div>  
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <img src="\assets\sam\san04.png" class="rounded mx-auto d-block" 
       style="vertical-align:middle; margin:15px 50px" width="100%">
     </div>  
