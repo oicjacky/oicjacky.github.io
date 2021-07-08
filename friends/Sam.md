@@ -189,6 +189,21 @@ subtitle:
 
 
 <div class="card bg-transparent" style="/* width: 45rem; */">
+  <img src="\assets\sam\duopeng.jpg" class="rounded mx-auto d-block" 
+      style="vertical-align:middle; margin:25px 50px" width="40%">
+  <div class="card-body">
+    <h5 class="card-title">多朋</h5>
+    <p class="card-text">
+    給疇崧，希望你回美國可以睡飽一點，<br>
+    重回我回憶中面試被我偷看的肌肉猛男&#x1F633;
+    </p>
+    <p align="right"><I>By Duopeng</I></p>
+  </div>
+</div>
+<p>  </p>
+
+
+<div class="card bg-transparent" style="/* width: 45rem; */">
   <div class="row">
     <div class="col-sm-4">
       <img src="\assets\sam\san02.png" class="rounded mx-auto d-block" 
