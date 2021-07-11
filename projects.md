@@ -15,3 +15,5 @@ subtitle: This page will link to my github repository.
 - [Statistical Computing](https://github.com/oicjacky/Statistical-Computing)
 
 - [hello C++](https://github.com/oicjacky/0126testing)
+
+- [R programming](/R_code/index.html)
