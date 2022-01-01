@@ -1,4 +1,90 @@
-[![](https://i.imgur.com/zNBkzj1.png)](https://beautifuljekyll.com/plans/)
+# Personal Page
+
+## GitHub Pages
+
+- [github/personal-website](https://github.com/github/personal-website)
+    
+    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6bfccd03-7561-4714-a1a7-ef92b901323c/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6bfccd03-7561-4714-a1a7-ef92b901323c/Untitled.png)
+    
+    1. Configuration: `_config.yml` file
+    2. Pages: `.md` file with front matter:
+        
+        ```markdown
+        ---
+        layout: home  # _layouts/home.html
+        ---
+        ```
+        
+    3. Blog posts: `.md` file in the repository `/_posts/` with name format:
+        
+        ```markdown
+        YEAR-MONTH-DAY-title.MARKUP
+        ```
+        
+        And start with the following in `.md` file:
+        
+        ```markdown
+        ---
+        title: "The title of my blog post"
+        published: true   
+        ## default with "layout: post" in your _posts/ directory
+        ---
+        ```
+        
+    4. Styles: `/assets/styles.scss` using the CSS import at-rule:
+        
+        ```markdown
+        @import url('https://unpkg.com/primer/build/build.css');
+        ```
+    
+    
+    ***Think of working flow as:***
+    
+    ```markdown
+    *`.md` -> 1. check front matter
+             2. if "layout = home", then it will be wrapped into `_layouts/home.html`
+    
+    `home.html` -> 1. content of `.md` will be put in {{ content }} 
+    							 2. call `_includes/{FILE-IN-_INCLUDES.html}` with 
+    									{% include FILE-IN-_INCLUDES.html %}*
+    ```
+    
+
+## [Jekyll](https://jekyllrb.com/) - static site generator
+
+Build-in support for [GitHub Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll).
+
+- be constructed by having a `gh-pages` branch of GitHub repository.
+- a basic Jekyll [structure](https://jekyllrb.com/docs/structure/) includes:
+    
+    ```markdown
+    _includes/  ## be mixed into layouts and posts.
+    _layouts/   ## templates that wrap posts.
+    _posts/     ## Markdown files that will become html pages on your site.
+                   The name follows `%Y-%M-%D-title.MARKUP`.
+    assets/     ## non-Markdown materials e.g. images or code.
+    Rakefile    ## instructions for the conversion
+    _config.yml ## all sorts of configuration parameters.
+    index.md    
+    ```
+    
+
+## Reference
+
+1. [How to Create a Blog Using Jekyll and GitHub Pages on Windows](https://www.kiltandcode.com/2020/04/30/how-to-create-a-blog-using-jekyll-and-github-pages-on-windows/)
+
+## Structure of Website
+
+- Home
+    - about me (like resume)
+    - blog post such as reading notes
+        - ML course
+        - R language
+        - python
+        - ...
+- Projects (use github repo)
+
+<!-- [![](https://i.imgur.com/zNBkzj1.png)](https://beautifuljekyll.com/plans/)
 
 # Beautiful Jekyll
 
@@ -218,4 +304,4 @@ You can also contribute by becoming an [official sponsor](https://github.com/spo
 
 This template was not made *entirely* from scratch. I'd like to give special thanks to [Jekyll Now](https://github.com/barryclark/jekyll-now) and [Bootstrap Clean Blog](https://github.com/IronSummitMedia/startbootstrap-clean-blog), from whom I've taken several ideas initially.
 
-I'd also like to thank [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories.
+I'd also like to thank [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories. -->
