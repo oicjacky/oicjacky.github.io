@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: This page will link to my github repository.
+subtitle: This page will link to my github repositories.
 ---
 
 ## Postgraduate studies
@@ -17,3 +17,15 @@ subtitle: This page will link to my github repository.
 - [hello C++](https://github.com/oicjacky/0126testing)
 
 - [R programming](/R_code/index.html)
+
+
+## Code
+
+- [LeetCode](https://github.com/oicjacky/Code-Camp)
+
+- [Advent of Code 2021](https://github.com/oicjacky/Code-Camp/tree/main/Advent_of_Code)
+
+
+## Machine Learning
+
+- [Machine Learning 2020 Spring, Hung-yi Lee](https://github.com/oicjacky/ML-course-of-Lee)
