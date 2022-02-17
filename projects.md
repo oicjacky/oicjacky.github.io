@@ -29,4 +29,6 @@ subtitle: This page will link to my github repositories.
 ## Machine Learning
 
 - [Machine Learning 2020 Spring, Hung-yi Lee](https://github.com/oicjacky/ML-course-of-Lee)
+  - [HW3 CNN - Food Classification](https://github.com/oicjacky/ML-course-of-Lee/tree/main/hw3)
+  - [HW4 RNN - Text Sentiment Classification](https://github.com/oicjacky/ML-course-of-Lee/tree/main/hw4)
 
