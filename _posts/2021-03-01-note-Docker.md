@@ -32,18 +32,23 @@ Docker 的容器就是這樣的一個概念，幫你事先將一個 App 所需�
 - 其他（把所有你想得到的東西填進來）
 
 ### What is Docker ?
-- Dockerfile: many open source on [Docker Hub](https://hub.docker.com/)
-- Docker image: build from Dockerfile
-- Docker container: run by Docker image
+- **Dockerfile**: a text document that contains all the commands a user could call on the command line to assemble an image.
+- **Docker image**: build from Dockerfile. Many open source on [Docker Hub](https://hub.docker.com/).
+- **Docker container**: run by Docker image.
 
 <img src="/assets/images/start_docker/image/0_LF94f5-yeqCsRXXC.png" style="vertical-align:middle;margin:0px 20px" width="100%">
 
-for example, we can pull a image created by Tensorflow:
+### 情境一：從docker hub上pull一個image下來使用
+
+For example, we can pull a image created by Tensorflow:
 ```bash
 > docker pull tensorflow/tensorflow
 > docker images
 > docker run -it -p 1234:8888 tensorflow/tensorflow
 ```
+其中，`-it`開啟互動terminal介面，`-p`設定本機port對應到container port。另外，若有看到`-d`，則代表container為後台運行模式，可用`docker logs`觀看。
+
+### 情境二：編寫自己的Dockerfile，構造出image並使用它
 
 If there is a `Dockerfile` as following:
 ```docker
